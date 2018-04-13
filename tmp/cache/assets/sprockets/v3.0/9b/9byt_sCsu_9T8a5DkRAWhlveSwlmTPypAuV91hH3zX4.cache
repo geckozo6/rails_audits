@@ -1,0 +1,26 @@
+{:uriI"‹file://app/assets/javascripts/aci-tree/sample/index.html?type=text/html&id=5602decda0465df4a8ef04a530a733718a717ac74083cbb077c20eabf05bf901:ET:load_pathI"app/assets/javascripts;T:filenameI"6app/assets/javascripts/aci-tree/sample/index.html;T:	nameI"aci-tree/sample/index;T:logical_pathI"aci-tree/sample/index.html;T:content_typeI"text/html;T:sourceI"İ<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="robots" content="index, follow">
+        <title>aciTree usage samples - A treeview control with jQuery</title>
+        <meta name="description" content="aciTree demos to show you how it can be used">
+        <meta name="keywords" content="aciTree, treeview, control, tree view, javascript, jQuery">
+        <link rel="stylesheet" type="text/css" href="../css/demo.css" media="all">
+    </head>
+    <body>
+
+        <p><a href="using-the-api.html" title="aciTree API">using the API</a> - show you how to use the API</p>
+        <p><a href="selected-event.html" title="aciTree selected event">selected event</a> - do something on item selection change</p>
+        <p><a href="selected-event-extended.html" title="aciTree selected event">extended selected event</a> - do something on item selection change</p>
+        <p><a href="using-links.html" title="aciTree using links">using links</a> - open a page on item click</p>
+        <p><a href="using-file-links.html" title="aciTree using links">using links only for tree leaves</a>  - open a page on item click</p>
+        <p><a href="using-hash.html" title="aciTree using hash">using hash/anchors</a> - scroll to an anchor on item click</p>
+        <p><a href="using-file-hash.html" title="aciTree using hash">using hash/anchors only for tree leaves</a> - scroll to an anchor on item click</p>
+
+    </body>
+</html>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Dfile-digest://app/assets/javascripts/aci-tree/sample/index.html;TTF:charsetI"
+utf-8;F:digest"%ÓŠ ®€}.òE¸yè¶òr§ÉÍ‘xóæÑÇĞm’øL:lengthiİ:dependencies_digest"%÷èØh+«cº·!È±£‡`ƒü¨Œ×ji:idI"E5602decda0465df4a8ef04a530a733718a717ac74083cbb077c20eabf05bf901;F:
+mtimel+åòËZ

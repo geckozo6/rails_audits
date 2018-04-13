@@ -1,0 +1,46 @@
+{:uriI"Žfile://app/assets/javascripts/codemirror/demo/closetag.html?type=text/html&id=b34a11a0ed54bd54658b7f37377d1660cc1ccbc6b953cf120c773fc41e3d2f2a:ET:load_pathI"app/assets/javascripts;T:filenameI"9app/assets/javascripts/codemirror/demo/closetag.html;T:	nameI"codemirror/demo/closetag;T:logical_pathI""codemirror/demo/closetag.html;T:content_typeI"text/html;T:sourceI"÷<!doctype html>
+
+<title>CodeMirror: Close-Tag Demo</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../doc/docs.css">
+
+<link rel="stylesheet" href="../lib/codemirror.css">
+<script src="../lib/codemirror.js"></script>
+<script src="../addon/edit/closetag.js"></script>
+<script src="../addon/fold/xml-fold.js"></script>
+<script src="../mode/xml/xml.js"></script>
+<script src="../mode/javascript/javascript.js"></script>
+<script src="../mode/css/css.js"></script>
+<script src="../mode/htmlmixed/htmlmixed.js"></script>
+<style type="text/css">
+      .CodeMirror {border-top: 1px solid #888; border-bottom: 1px solid #888;}
+    </style>
+<div id=nav>
+  <a href="http://codemirror.net"><img id=logo src="../doc/logo.png"></a>
+
+  <ul>
+    <li><a href="../index.html">Home</a>
+    <li><a href="../doc/manual.html">Manual</a>
+    <li><a href="https://github.com/marijnh/codemirror">Code</a>
+  </ul>
+  <ul>
+    <li><a class=active href="#">Close-Tag</a>
+  </ul>
+</div>
+
+<article>
+<h2>Close-Tag Demo</h2>
+<form><textarea id="code" name="code"><html</textarea></form>
+
+    <script type="text/javascript">
+      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        mode: 'text/html',
+        autoCloseTags: true
+      });
+    </script>
+  </article>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Gfile-digest://app/assets/javascripts/codemirror/demo/closetag.html;TTF:charsetI"
+utf-8;F:digest"%æÀ-ús‰­>(n;çÞßàWùy{†ú%CÄê6VB :lengthi÷:dependencies_digest"%ÇÀ±¾Á£SÏËZ¬²å†ƒ½Æ¡Ò{%ó6 †…î‡7:idI"Eb34a11a0ed54bd54658b7f37377d1660cc1ccbc6b953cf120c773fc41e3d2f2a;F:
+mtimel+åòËZ

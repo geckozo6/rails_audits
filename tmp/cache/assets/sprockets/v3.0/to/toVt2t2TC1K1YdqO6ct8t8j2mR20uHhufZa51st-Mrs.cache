@@ -1,0 +1,112 @@
+{:uriI"êfile://app/assets/javascripts/fullcalendar-2/demos/theme.html?type=text/html&id=75a1b9efcf5de29c95961ed6f81ba8e0f8cd914384ed80ae86e51e56a82f689c:ET:load_pathI"app/assets/javascripts;T:filenameI";app/assets/javascripts/fullcalendar-2/demos/theme.html;T:	nameI"fullcalendar-2/demos/theme;T:logical_pathI"$fullcalendar-2/demos/theme.html;T:content_typeI"text/html;T:sourceI"À<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<link rel='stylesheet' href='../lib/cupertino/jquery-ui.min.css' />
+<link href='../fullcalendar.css' rel='stylesheet' />
+<link href='../fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='../lib/moment.min.js'></script>
+<script src='../lib/jquery.min.js'></script>
+<script src='../fullcalendar.min.js'></script>
+<script>
+
+	$(document).ready(function() {
+
+		$('#calendar').fullCalendar({
+			theme: true,
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+			defaultDate: '2014-11-12',
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			events: [
+				{
+					title: 'All Day Event',
+					start: '2014-11-01'
+				},
+				{
+					title: 'Long Event',
+					start: '2014-11-07',
+					end: '2014-11-10'
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2014-11-09T16:00:00'
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2014-11-16T16:00:00'
+				},
+				{
+					title: 'Conference',
+					start: '2014-11-11',
+					end: '2014-11-13'
+				},
+				{
+					title: 'Meeting',
+					start: '2014-11-12T10:30:00',
+					end: '2014-11-12T12:30:00'
+				},
+				{
+					title: 'Lunch',
+					start: '2014-11-12T12:00:00'
+				},
+				{
+					title: 'Meeting',
+					start: '2014-11-12T14:30:00'
+				},
+				{
+					title: 'Happy Hour',
+					start: '2014-11-12T17:30:00'
+				},
+				{
+					title: 'Dinner',
+					start: '2014-11-12T20:00:00'
+				},
+				{
+					title: 'Birthday Party',
+					start: '2014-11-13T07:00:00'
+				},
+				{
+					title: 'Click for Google',
+					url: 'http://google.com/',
+					start: '2014-11-28'
+				}
+			]
+		});
+		
+	});
+
+</script>
+<style>
+
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+</style>
+</head>
+<body>
+
+	<div id='calendar'></div>
+
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ifile-digest://app/assets/javascripts/fullcalendar-2/demos/theme.html;TTF:charsetI"
+utf-8;F:digest"%Âì\úÃ_•`‡=˚’÷∫åÿÒ|’cßî)¬:lengthiÀ:dependencies_digest"%3®6ß@=çå®K_@±ˆ'%kı¶'O∑€€3”Ø:ÙµJÂ:idI"E75a1b9efcf5de29c95961ed6f81ba8e0f8cd914384ed80ae86e51e56a82f689c;F:
+mtimel+ÂÚÀZ

@@ -1,0 +1,52 @@
+{:uriI"ñfile://app/assets/javascripts/codemirror/demo/matchhighlighter.html?type=text/html&id=0c910f19a0e3940c1ecde5c7d917d18a89de177d6d60164960724a51c6cae506:ET:load_pathI"app/assets/javascripts;T:filenameI"Aapp/assets/javascripts/codemirror/demo/matchhighlighter.html;T:	nameI"%codemirror/demo/matchhighlighter;T:logical_pathI"*codemirror/demo/matchhighlighter.html;T:content_typeI"text/html;T:sourceI"H<!doctype html>
+
+<title>CodeMirror: Match Highlighter Demo</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../doc/docs.css">
+
+<link rel="stylesheet" href="../lib/codemirror.css">
+<script src="../lib/codemirror.js"></script>
+<script src="../addon/search/searchcursor.js"></script>
+<script src="../addon/search/match-highlighter.js"></script>
+<style type="text/css">
+      .CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
+      .CodeMirror-focused .cm-matchhighlight {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFklEQVQI12NgYGBgkKzc8x9CMDAwAAAmhwSbidEoSQAAAABJRU5ErkJggg==);
+        background-position: bottom;
+        background-repeat: repeat-x;
+      }
+    </style>
+<div id=nav>
+  <a href="http://codemirror.net"><img id=logo src="../doc/logo.png"></a>
+
+  <ul>
+    <li><a href="../index.html">Home</a>
+    <li><a href="../doc/manual.html">Manual</a>
+    <li><a href="https://github.com/marijnh/codemirror">Code</a>
+  </ul>
+  <ul>
+    <li><a class=active href="#">Match Highlighter</a>
+  </ul>
+</div>
+
+<article>
+<h2>Match Highlighter Demo</h2>
+<form><textarea id="code" name="code">Select this text: hardToSpotVar
+	And everywhere else in your code where hardToSpotVar appears will automatically illuminate.
+Give it a try!  No more hardToSpotVars.</textarea></form>
+
+    <script>
+var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+  lineNumbers: true,
+  highlightSelectionMatches: {showToken: /\w/}
+});
+</script>
+
+    <p>Search and highlight occurences of the selected text.</p>
+
+  </article>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ofile-digest://app/assets/javascripts/codemirror/demo/matchhighlighter.html;TTF:charsetI"
+utf-8;F:digest"%Xπ8˛s_ˆµœ™;÷’Ë”KP»›œ≈›D¶M©;Â):lengthiH:dependencies_digest"%Æ]¢ŒâhÑ∫∫_ÿÎz·Ä.gu⁄ùÍ*ì&Ω?J∞?:idI"E0c910f19a0e3940c1ecde5c7d917d18a89de177d6d60164960724a51c6cae506;F:
+mtimel+ÂÚÀZ

@@ -1,0 +1,73 @@
+{:uriI"Žfile://app/assets/javascripts/codemirror/demo/mustache.html?type=text/html&id=2020141e7f597386b643835267110086d7749f7fd74721948b3acfa42b3ba16f:ET:load_pathI"app/assets/javascripts;T:filenameI"9app/assets/javascripts/codemirror/demo/mustache.html;T:	nameI"codemirror/demo/mustache;T:logical_pathI""codemirror/demo/mustache.html;T:content_typeI"text/html;T:sourceI"<!doctype html>
+
+<title>CodeMirror: Overlay Parser Demo</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../doc/docs.css">
+
+<link rel="stylesheet" href="../lib/codemirror.css">
+<script src="../lib/codemirror.js"></script>
+<script src="../addon/mode/overlay.js"></script>
+<script src="../mode/xml/xml.js"></script>
+<style type="text/css">
+      .CodeMirror {border: 1px solid black;}
+      .cm-mustache {color: #0ca;}
+</style>
+<div id=nav>
+  <a href="http://codemirror.net"><img id=logo src="../doc/logo.png"></a>
+
+  <ul>
+    <li><a href="../index.html">Home</a>
+    <li><a href="../doc/manual.html">Manual</a>
+    <li><a href="https://github.com/marijnh/codemirror">Code</a>
+  </ul>
+  <ul>
+    <li><a class=active href="#">Overlay Parser</a>
+  </ul>
+</div>
+
+<article>
+<h2>Overlay Parser Demo</h2>
+<form><textarea id="code" name="code">
+<html>
+  <body>
+    <h1>{{title}}</h1>
+    <p>These are links to {{things}}:</p>
+    <ul>{{#links}}
+      <li><a href="{{url}}">{{text}}</a></li>
+    {{/links}}</ul>
+  </body>
+</html>
+</textarea></form>
+
+    <script>
+CodeMirror.defineMode("mustache", function(config, parserConfig) {
+  var mustacheOverlay = {
+    token: function(stream, state) {
+      var ch;
+      if (stream.match("{{")) {
+        while ((ch = stream.next()) != null)
+          if (ch == "}" && stream.next() == "}") break;
+        stream.eat("}");
+        return "mustache";
+      }
+      while (stream.next() != null && !stream.match("{{", false)) {}
+      return null;
+    }
+  };
+  return CodeMirror.overlayMode(CodeMirror.getMode(config, parserConfig.backdrop || "text/html"), mustacheOverlay);
+});
+var editor = CodeMirror.fromTextArea(document.getElementById("code"), {mode: "mustache"});
+</script>
+
+    <p>Demonstration of a mode that parses HTML, highlighting
+    the <a href="http://mustache.github.com/">Mustache</a> templating
+    directives inside of it by using the code
+    in <a href="../addon/mode/overlay.js"><code>overlay.js</code></a>. View
+    source to see the 15 lines of code needed to accomplish this.</p>
+
+  </article>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Gfile-digest://app/assets/javascripts/codemirror/demo/mustache.html;TTF:charsetI"
+utf-8;F:digest"%”bòJCRA?Ÿ…ë$ýÁ¥€=	ÛOÁÿ÷áe:lengthi:dependencies_digest"%¡Á»‹IÀÊe³ÀÁ_˜²,Ñ¬ÐëOû›—g'žUHx:idI"E2020141e7f597386b643835267110086d7749f7fd74721948b3acfa42b3ba16f;F:
+mtimel+åòËZ

@@ -1,0 +1,41 @@
+{:uriI"“file://app/assets/javascripts/select2/select2.jquery.json?type=application/json&id=d23d1b20e650c09ab40f6c8fa9ee7a2436585a945bb78a06b7ce0f530df6d48a:ET:load_pathI"app/assets/javascripts;T:filenameI"7app/assets/javascripts/select2/select2.jquery.json;T:	nameI"select2/select2.jquery;T:logical_pathI" select2/select2.jquery.json;T:content_typeI"application/json;T:sourceI"{
+    "name": "select2",
+    "title": "Select2",
+    "description": "Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.",
+    "keywords": [
+        "select",
+        "autocomplete",
+        "typeahead",
+        "dropdown",
+        "multiselect",
+        "tag",
+        "tagging"
+    ],
+    "version": "3.5.2",
+    "author": {
+        "name": "Igor Vaynberg",
+        "url": "https://github.com/ivaynberg"
+    },
+    "licenses": [
+        {
+            "type": "Apache",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+            "type": "GPL v2",
+            "url": "http://www.gnu.org/licenses/gpl-2.0.html"
+        }
+    ],
+    "bugs": "https://github.com/ivaynberg/select2/issues",
+    "homepage": "http://ivaynberg.github.com/select2",
+    "docs": "http://ivaynberg.github.com/select2/",
+    "download": "https://github.com/ivaynberg/select2/tags",
+    "dependencies": {
+        "jquery": ">=1.7.1"
+    }
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Efile-digest://app/assets/javascripts/select2/select2.jquery.json;TTF:charsetI"
+utf-8;F:digest"%»wQC†T¡ªê\«Vbƒë**tqI}\*CþÒ~ <®ÄJ:lengthi:dependencies_digest"%’ÔùªT>ÁVQ'õÂ)ø*àe¯_Z’µ‘€Žþúdû:idI"Ed23d1b20e650c09ab40f6c8fa9ee7a2436585a945bb78a06b7ce0f530df6d48a;F:
+mtimel+åòËZ

@@ -1,0 +1,62 @@
+{:uriI"èfile://app/assets/javascripts/codemirror/mode/xml/index.html?type=text/html&id=d150e2459377973a95fc31c93650bf46b11135e2ba8e227544b085810fb7df7e:ET:load_pathI"app/assets/javascripts;T:filenameI":app/assets/javascripts/codemirror/mode/xml/index.html;T:	nameI"codemirror/mode/xml/index;T:logical_pathI"#codemirror/mode/xml/index.html;T:content_typeI"text/html;T:sourceI"ú<!doctype html>
+
+<title>CodeMirror: XML mode</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../../doc/docs.css">
+
+<link rel="stylesheet" href="../../lib/codemirror.css">
+<script src="../../lib/codemirror.js"></script>
+<script src="xml.js"></script>
+<style type="text/css">.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}</style>
+<div id=nav>
+  <a href="http://codemirror.net"><img id=logo src="../../doc/logo.png"></a>
+
+  <ul>
+    <li><a href="../../index.html">Home</a>
+    <li><a href="../../doc/manual.html">Manual</a>
+    <li><a href="https://github.com/marijnh/codemirror">Code</a>
+  </ul>
+  <ul>
+    <li><a href="../index.html">Language modes</a>
+    <li><a class=active href="#">XML</a>
+  </ul>
+</div>
+
+<article>
+<h2>XML mode</h2>
+<form><textarea id="code" name="code">
+&lt;html style="color: green"&gt;
+  &lt;!-- this is a comment --&gt;
+  &lt;head&gt;
+    &lt;title&gt;HTML Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    The indentation tries to be &lt;em&gt;somewhat &amp;quot;do what
+    I mean&amp;quot;&lt;/em&gt;... but might not match your style.
+  &lt;/body&gt;
+&lt;/html&gt;
+</textarea></form>
+    <script>
+      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        mode: {name: "xml", alignCDATA: true},
+        lineNumbers: true
+      });
+    </script>
+    <p>The XML mode supports two configuration parameters:</p>
+    <dl>
+      <dt><code>htmlMode (boolean)</code></dt>
+      <dd>This switches the mode to parse HTML instead of XML. This
+      means attributes do not have to be quoted, and some elements
+      (such as <code>br</code>) do not require a closing tag.</dd>
+      <dt><code>alignCDATA (boolean)</code></dt>
+      <dd>Setting this to true will force the opening tag of CDATA
+      blocks to not be indented.</dd>
+    </dl>
+
+    <p><strong>MIME types defined:</strong> <code>application/xml</code>, <code>text/html</code>.</p>
+  </article>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Hfile-digest://app/assets/javascripts/codemirror/mode/xml/index.html;TTF:charsetI"
+utf-8;F:digest"%ƒ°‹˙ﬁ±°WæÂ⁄ï⁄_Á (·¥¯ûÄÌâhñïQ‹:lengthiú:dependencies_digest"%¿+î≈%!j…Ù‚ØbSñè2PB`››ïn8Ëeî%KŸn:idI"Ed150e2459377973a95fc31c93650bf46b11135e2ba8e227544b085810fb7df7e;F:
+mtimel+ÂÚÀZ

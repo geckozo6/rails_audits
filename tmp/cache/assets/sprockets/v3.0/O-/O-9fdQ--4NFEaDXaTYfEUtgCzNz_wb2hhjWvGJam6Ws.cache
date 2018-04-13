@@ -1,0 +1,77 @@
+{:uriI"Žfile://app/assets/javascripts/codemirror/demo/hardwrap.html?type=text/html&id=1aacbfebea207baf7371f57d7e63bd3ef25d8898bb5c2d23ec3b37a42339a0ed:ET:load_pathI"app/assets/javascripts;T:filenameI"9app/assets/javascripts/codemirror/demo/hardwrap.html;T:	nameI"codemirror/demo/hardwrap;T:logical_pathI""codemirror/demo/hardwrap.html;T:content_typeI"text/html;T:sourceI"®	<!doctype html>
+
+<title>CodeMirror: Hard-wrapping Demo</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../doc/docs.css">
+
+<link rel="stylesheet" href="../lib/codemirror.css">
+<script src="../lib/codemirror.js"></script>
+<script src="../mode/markdown/markdown.js"></script>
+<script src="../addon/wrap/hardwrap.js"></script>
+<style type="text/css">
+  .CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
+</style>
+<div id=nav>
+  <a href="http://codemirror.net"><img id=logo src="../doc/logo.png"></a>
+
+  <ul>
+    <li><a href="../index.html">Home</a>
+    <li><a href="../doc/manual.html">Manual</a>
+    <li><a href="https://github.com/marijnh/codemirror">Code</a>
+  </ul>
+  <ul>
+    <li><a class=active href="#">Hard-wrapping</a>
+  </ul>
+</div>
+
+<article>
+<h2>Hard-wrapping Demo</h2>
+<form><textarea id="code" name="code">Lorem ipsum dolor sit amet, vim augue dictas constituto ex,
+sit falli simul viderer te. Graeco scaevola maluisset sit
+ut, in idque viris praesent sea. Ea sea eirmod indoctum
+repudiare. Vel noluisse suscipit pericula ut. In ius nulla
+alienum molestie. Mei essent discere democritum id.
+
+Equidem ponderum expetendis ius in, mea an erroribus
+constituto, congue timeam perfecto ad est. Ius ut primis
+timeam, per in ullum mediocrem. An case vero labitur pri,
+vel dicit laoreet et. An qui prompta conclusionemque, eam
+timeam sapientem in, cum dictas epicurei eu.
+
+Usu cu vide dictas deseruisse, eum choro graece adipiscing
+ut. Cibo qualisque ius ad, et dicat scripta mea, eam nihil
+mentitum aliquando cu. Debet aperiam splendide at quo, ad
+paulo nostro commodo duo. Sea adhuc utinam conclusionemque
+id, quas doming malorum nec ad. Tollit eruditi vivendum ad
+ius, eos soleat ignota ad.
+</textarea></form>
+
+<p>Demonstration of
+the <a href="../doc/manual.html#addon_hardwrap">hardwrap</a> addon.
+The above editor has its change event hooked up to
+the <code>wrapParagraphsInRange</code> method, so that the paragraphs
+are reflown as you are typing.</p>
+
+<script>
+var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+  mode: "markdown",
+  lineNumbers: true,
+  extraKeys: {
+    "Ctrl-Q": function(cm) { cm.wrapParagraph(cm.getCursor(), options); }
+  }
+});
+var wait, options = {column: 60};
+editor.on("change", function(cm, change) {
+  clearTimeout(wait);
+  wait = setTimeout(function() {
+    console.log(cm.wrapParagraphsInRange(change.from, CodeMirror.changeEnd(change), options));
+  }, 200);
+});
+</script>
+
+</article>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Gfile-digest://app/assets/javascripts/codemirror/demo/hardwrap.html;TTF:charsetI"
+utf-8;F:digest"%/JjpWã7jÏñ‚7¤hÙtûÊ*·ó™ô÷&Ì¾™2¸:lengthi®	:dependencies_digest"%#É»ò“Ò`Œÿ8×¯ø};óµ´ð_çI¿9É‡Þ×DYð:idI"E1aacbfebea207baf7371f57d7e63bd3ef25d8898bb5c2d23ec3b37a42339a0ed;F:
+mtimel+åòËZ

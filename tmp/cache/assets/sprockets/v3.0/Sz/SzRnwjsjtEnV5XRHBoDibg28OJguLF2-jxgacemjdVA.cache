@@ -1,0 +1,26 @@
+{:uriI"file://app/assets/javascripts/codemirror/package.json?type=application/json&id=6b261687f3facfdc7df75b9c2a0802de2f975a680a86a0b955731d02bc4457b6:ET:load_pathI"app/assets/javascripts;T:filenameI"3app/assets/javascripts/codemirror/package.json;T:	nameI"codemirror/package;T:logical_pathI"codemirror/package.json;T:content_typeI"application/json;T:sourceI"F{
+    "name": "codemirror",
+    "version":"3.21.0",
+    "main": "lib/codemirror.js",
+    "description": "In-browser code editing made bearable",
+    "licenses": [{"type": "MIT",
+                  "url": "http://codemirror.net/LICENSE"}],
+    "directories": {"lib": "./lib"},
+    "scripts": {"test": "node ./test/run.js"},
+    "devDependencies": {"node-static": "0.6.0",
+                        "phantomjs": "1.9.2-5"},
+    "bugs": "http://github.com/marijnh/CodeMirror/issues",
+    "keywords": ["JavaScript", "CodeMirror", "Editor"],
+    "homepage": "http://codemirror.net",
+    "maintainers":[{"name": "Marijn Haverbeke",
+                    "email": "marijnh@gmail.com",
+                    "web": "http://marijnhaverbeke.nl"}],
+    "repository": {"type": "git",
+                   "url": "https://github.com/marijnh/CodeMirror.git"}
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Afile-digest://app/assets/javascripts/codemirror/package.json;TTF:charsetI"
+utf-8;F:digest"%Æêj•¼•«ÃÍÂ–V«^hºöÍà
+šWŒ=¿Ì©26¤:lengthiF:dependencies_digest"%õ/[ ¡_X‚/¯D	¨³¨†ûEûö 	ü½hK9¸Z.:idI"E6b261687f3facfdc7df75b9c2a0802de2f975a680a86a0b955731d02bc4457b6;F:
+mtimel+åòËZ

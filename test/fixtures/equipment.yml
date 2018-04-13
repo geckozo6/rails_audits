@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  equipment_type: MyText
+  vendor: MyText
+  service: MyText
+
+two:
+  equipment_type: MyText
+  vendor: MyText
+  service: MyText

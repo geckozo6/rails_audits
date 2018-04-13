@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sample_type: MyText
+  aql: 9.99
+  sampledate: 2018-04-09
+  lot: MyText
+  equipment: one
+  auditor: one
+
+two:
+  sample_type: MyText
+  aql: 9.99
+  sampledate: 2018-04-09
+  lot: MyText
+  equipment: two
+  auditor: two

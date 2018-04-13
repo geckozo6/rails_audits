@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  serie: MyText
+  cmac: MyText
+  emac: MyText
+  status: false
+  sample: one
+
+two:
+  serie: MyText
+  cmac: MyText
+  emac: MyText
+  status: false
+  sample: two

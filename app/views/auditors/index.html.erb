@@ -1,0 +1,78 @@
+		<h3>Auditores</h3>
+		
+		
+		<table class="table table-bordered table-striped datatable" id="table-2">
+			<thead>
+				<tr>
+					<th>
+						<div class="checkbox checkbox-replace">
+							<input type="checkbox" id="chk-1">
+						</div>
+					</th>
+					<th>Nombre del Auditor</th>
+					<th>No. de Empleado</th>
+					<th>Acciones</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+			    <% @auditors.each do |auditor| %>
+			         <tr>
+	 					<td>
+	 						<div class="checkbox checkbox-replace">
+	 							<input type="checkbox" id="chk-1">
+	 						</div>
+	 					</td>
+			           <td><%= auditor.name %></td>
+			           <td><%= auditor.employee %></td>
+   						<td>
+							
+							<%= link_to '<i class="entypo-pencil"></i>Editar'.html_safe, edit_auditor_path(auditor), 
+								class: "btn btn-default btn-sm btn-icon icon-left"  %>
+							
+							<%= link_to '<i class="entypo-cancel"></i>Borrar'.html_safe, auditor, 
+								class: "btn btn-danger btn-sm btn-icon icon-left", 
+								method: :delete, 
+								data: { confirm: 'Are you sure?' } %>
+										
+							<%= link_to '<i class="entypo-info"></i>Ver'.html_safe, auditor, 
+								class: "btn btn-info btn-sm btn-icon icon-left"  %>
+																		
+   						</td>
+			         </tr>
+			  <% end %>
+				<% if @auditors.size== 0%>
+					<em> No existen auditores</em>
+				<% end %>
+			</tbody>
+		</table>
+
+
+
+
+
+<p id="notice"><%= notice %></p>
+
+<h1>Auditors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @auditors.each do |auditor| %>
+      <tr>
+        <td><%= link_to 'Show', auditor %></td>
+        <td><%= link_to 'Edit', edit_auditor_path(auditor) %></td>
+        <td><%= link_to 'Destroy', auditor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Auditor', new_auditor_path %>

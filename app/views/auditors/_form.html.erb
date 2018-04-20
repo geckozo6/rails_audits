@@ -1,0 +1,74 @@
+<%= form_with(model: auditor, local: true) do |form| %>
+
+  <% if auditor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(auditor.errors.count, "error") %> prohibited this auditor from being saved:</h2>
+
+      <ul>
+      <% auditor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  	
+	 
+
+  <h2>Basic Form Elements</h2>
+
+  <br />
+
+  <div class="row">
+  	<div class="col-md-12">
+		
+  		<div class="panel panel-primary" data-collapsed="0">
+		
+  			<div class="panel-heading">
+  				<div class="panel-title">
+  					Default Form Inputs
+  				</div>
+				
+  				<div class="panel-options">
+  					<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+  					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+  					<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+  					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+  				</div>
+  			</div>
+			
+  			<div class="panel-body">
+				
+  				<form role="form" class="form-horizontal form-groups-bordered">
+	
+  					<div class="form-group">
+  						<label for="field-1" class="col-sm-2 control-label">Nombre del Auditor</label>
+						
+  						<div class="col-sm-8">
+  							<%= form.text_field :name, id: :auditor_name, class: 'form-control', id: 'field-1', placeholder: 'Nombre del Auditor' %>
+  						</div>
+  					</div>
+					
+  					<div class="form-group">
+  						<label for="field-1" class="col-sm-2 control-label">Número de Empleado</label>
+						
+  						<div class="col-sm-8">
+  							<%= form.text_field :employee, id: :auditor_employee, class: 'form-control', id: 'field-2', placeholder: '# Empleado' %>
+  						</div>
+  					</div>
+					
+					
+  					<div class="form-group">
+  						<div class="col-sm-offset-3 col-sm-5 actions">
+  							<%= form.submit 'Actualizar', class: 'btn btn-default' %>
+  						</div>
+  					</div>
+  				</form><form></form> 
+				
+  			</div>
+		
+  		</div>
+	
+  	</div>
+  </div>
+  
+<% end %>

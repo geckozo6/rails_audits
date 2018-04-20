@@ -1,0 +1,105 @@
+
+<p id="notice"><%= notice %></p>
+
+
+
+	<form></form>  
+
+  <h2>Basic Form Elements</h2>
+
+  <br />
+
+  <div class="row">
+  	<div class="col-md-12">
+		
+  		<div class="panel panel-primary" data-collapsed="0">
+		
+  			<div class="panel-heading">
+  				<div class="panel-title">
+  					Default Form Inputs
+  				</div>
+				
+  				<div class="panel-options">
+  					<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+  					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+  					<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+  					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+  				</div>
+  			</div>
+			
+  			<div class="panel-body">
+				
+  				<form role="form" class="form-horizontal form-groups-bordered">
+	
+  					<div class="form-group">
+  						<label for="field-1" class="col-sm-2 control-label">Nombre del Auditor</label>
+						
+  						<div class="col-sm-8">
+  						</div>
+  					</div>
+					
+  					<div class="form-group">
+  						<label for="field-1" class="col-sm-2 control-label">Número de Empleado</label>
+						
+  						<div class="col-sm-8">
+							
+  						</div>
+  					</div>
+					
+					
+  					<div class="form-group">
+  						<div class="col-sm-offset-3 col-sm-5 actions">
+							
+  						</div>
+  					</div>
+  				</form>
+				
+  			</div>
+		
+  		</div>
+	
+  	</div>
+  </div>
+
+
+
+
+
+
+<p>
+  <strong>ID:</strong>
+  <%= @sample.id %>
+</p>
+
+<p>
+  <strong>Tipo de Muestreo:</strong>
+  <%= @sample.sample_type %>
+</p>
+
+<p>
+  <strong>AQL:</strong>
+  <%= @sample.aql %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @sample.sampledate %>
+</p>
+
+<p>
+  <strong>Lote:</strong>
+  <%= @sample.lot %>
+</p>
+
+<p>
+  <strong>Tipo Equipo:</strong>
+  <%# link_to @sample.equipment.equipment_type, equipment_path(@sample.equipment.id) %>
+  <%= @sample.equipment.equipment_type %>
+</p>
+
+  <strong>Auditor:</strong>
+  <%= link_to @sample.auditor.name, auditor_path(@sample.auditor.id) %>
+</p>
+
+<%= link_to 'Edit', edit_sample_path(@sample) %> |
+<%= link_to 'Back', samples_path %>

@@ -1,66 +1,0 @@
-{:uriI"êfile://app/assets/javascripts/codemirror/mode/rust/index.html?type=text/html&id=588d686812a1aace63899fe92242ed3430bcaad438c3f2f6733290f1cbef4bed:ET:load_pathI"app/assets/javascripts;T:filenameI";app/assets/javascripts/codemirror/mode/rust/index.html;T:	nameI"codemirror/mode/rust/index;T:logical_pathI"$codemirror/mode/rust/index.html;T:content_typeI"text/html;T:sourceI"c<!doctype html>
-
-<title>CodeMirror: Rust mode</title>
-<meta charset="utf-8"/>
-<link rel=stylesheet href="../../doc/docs.css">
-
-<link rel="stylesheet" href="../../lib/codemirror.css">
-<script src="../../lib/codemirror.js"></script>
-<script src="rust.js"></script>
-<style type="text/css">.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}</style>
-<div id=nav>
-  <a href="http://codemirror.net"><img id=logo src="../../doc/logo.png"></a>
-
-  <ul>
-    <li><a href="../../index.html">Home</a>
-    <li><a href="../../doc/manual.html">Manual</a>
-    <li><a href="https://github.com/marijnh/codemirror">Code</a>
-  </ul>
-  <ul>
-    <li><a href="../index.html">Language modes</a>
-    <li><a class=active href="#">Rust</a>
-  </ul>
-</div>
-
-<article>
-<h2>Rust mode</h2>
-
-
-<div><textarea id="code" name="code">
-// Demo code.
-
-type foo<T> = int;
-enum bar {
-    some(int, foo<float>),
-    none
-}
-
-fn check_crate(x: int) {
-    let v = 10;
-    alt foo {
-      1 to 3 {
-        print_foo();
-        if x {
-            blah() + 10;
-        }
-      }
-      (x, y) { "bye" }
-      _ { "hi" }
-    }
-}
-</textarea></div>
-
-    <script>
-      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
-        lineNumbers: true,
-        tabMode: "indent"
-      });
-    </script>
-
-    <p><strong>MIME types defined:</strong> <code>text/x-rustsrc</code>.</p>
-  </article>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ifile-digest://app/assets/javascripts/codemirror/mode/rust/index.html;TTF:charsetI"
-utf-8;F:digest"%ÍSs`a÷≥Fı\…¡ù1r®¶≤VÌ"∫–ƒ:lengthic:dependencies_digest"%ÈÈ7ˆíxƒä¶vÉê∏|L∂Mf‹"èºÒ f:idI"E588d686812a1aace63899fe92242ed3430bcaad438c3f2f6733290f1cbef4bed;F:
-mtimel+ÂÚÀZ

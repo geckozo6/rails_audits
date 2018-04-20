@@ -1,74 +1,0 @@
-{:uriI"éfile://app/assets/javascripts/ckeditor/samples/uicolor.html?type=text/html&id=a66dbd556cb71c76d17c5e9694af67aab957e43a5ceae77280471fe236a99c35:ET:load_pathI"app/assets/javascripts;T:filenameI"9app/assets/javascripts/ckeditor/samples/uicolor.html;T:	nameI"ckeditor/samples/uicolor;T:logical_pathI""ckeditor/samples/uicolor.html;T:content_typeI"text/html;T:sourceI""	<!DOCTYPE html>
-<!--
-Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.md or http://ckeditor.com/license
--->
-<html>
-<head>
-	<title>UI Color Picker &mdash; CKEditor Sample</title>
-	<meta charset="utf-8">
-	<script src="../ckeditor.js"></script>
-	<link rel="stylesheet" href="sample.css">
-</head>
-<body>
-	<h1 class="samples">
-		<a href="index.html">CKEditor Samples</a> &raquo; UI Color
-	</h1>
-	<div class="description">
-		<p>
-			This sample shows how to automatically replace <code>&lt;textarea&gt;</code> elements
-			with a CKEditor instance with an option to change the color of its user interface.<br>
-			<strong>Note:</strong>The UI skin color feature depends on the CKEditor skin
-			compatibility. The Moono and Kama skins are examples of skins that work with it.
-		</p>
-	</div>
-	<form action="sample_posteddata.php" method="post">
-	<p>
-		This editor instance has a UI color value defined in configuration to change the skin color,
-		To specify the color of the user interface, set the <code>uiColor</code> property:
-	</p>
-	<pre class="samples">
-CKEDITOR.replace( '<em>textarea_id</em>', {
-	<strong>uiColor: '#14B8C4'</strong>
-});</pre>
-	<p>
-		Note that <code><em>textarea_id</em></code> in the code above is the <code>id</code> attribute of
-		the <code>&lt;textarea&gt;</code> element to be replaced.
-	</p>
-	<p>
-		<textarea cols="80" id="editor1" name="editor1" rows="10">&lt;p&gt;This is some &lt;strong&gt;sample text&lt;/strong&gt;. You are using &lt;a href="http://ckeditor.com/"&gt;CKEditor&lt;/a&gt;.&lt;/p&gt;</textarea>
-		<script>
-
-			// Replace the <textarea id="editor"> with an CKEditor
-			// instance, using default configurations.
-			CKEDITOR.replace( 'editor1', {
-				uiColor: '#14B8C4',
-				toolbar: [
-					[ 'Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink' ],
-					[ 'FontSize', 'TextColor', 'BGColor' ]
-				]
-			});
-
-		</script>
-	</p>
-	<p>
-		<input type="submit" value="Submit">
-	</p>
-	</form>
-	<div id="footer">
-		<hr>
-		<p>
-			CKEditor - The text editor for the Internet - <a class="samples" href="http://ckeditor.com/">http://ckeditor.com</a>
-		</p>
-		<p id="copy">
-			Copyright &copy; 2003-2013, <a class="samples" href="http://cksource.com/">CKSource</a> - Frederico
-			Knabben. All rights reserved.
-		</p>
-	</div>
-</body>
-</html>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Gfile-digest://app/assets/javascripts/ckeditor/samples/uicolor.html;TTF:charsetI"
-utf-8;F:digest"%5r!	õ6u ~MçÄµ6èËPÄIfo∑L…¢cJh:lengthi"	:dependencies_digest"%]zΩVkÎînÑéâä≥Rœ°“P"Uõ∫£⁄ÔF∑:idI"Ea66dbd556cb71c76d17c5e9694af67aab957e43a5ceae77280471fe236a99c35;F:
-mtimel+ÂÚÀZ

@@ -1,67 +1,0 @@
-{:uriI"’file://app/assets/javascripts/codemirror/mode/pascal/index.html?type=text/html&id=1da0ab7c730842a79eb1b3b487e8c66ec71d3e8c9d52e239a8ce57cbff0caeda:ET:load_pathI"app/assets/javascripts;T:filenameI"=app/assets/javascripts/codemirror/mode/pascal/index.html;T:	nameI"!codemirror/mode/pascal/index;T:logical_pathI"&codemirror/mode/pascal/index.html;T:content_typeI"text/html;T:sourceI"Š<!doctype html>
-
-<title>CodeMirror: Pascal mode</title>
-<meta charset="utf-8"/>
-<link rel=stylesheet href="../../doc/docs.css">
-
-<link rel="stylesheet" href="../../lib/codemirror.css">
-<script src="../../lib/codemirror.js"></script>
-<script src="pascal.js"></script>
-<style type="text/css">.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}</style>
-<div id=nav>
-  <a href="http://codemirror.net"><img id=logo src="../../doc/logo.png"></a>
-
-  <ul>
-    <li><a href="../../index.html">Home</a>
-    <li><a href="../../doc/manual.html">Manual</a>
-    <li><a href="https://github.com/marijnh/codemirror">Code</a>
-  </ul>
-  <ul>
-    <li><a href="../index.html">Language modes</a>
-    <li><a class=active href="#">Pascal</a>
-  </ul>
-</div>
-
-<article>
-<h2>Pascal mode</h2>
-
-
-<div><textarea id="code" name="code">
-(* Example Pascal code *)
-
-while a <> b do writeln('Waiting');
- 
-if a > b then 
-  writeln('Condition met')
-else 
-  writeln('Condition not met');
- 
-for i := 1 to 10 do 
-  writeln('Iteration: ', i:1);
- 
-repeat
-  a := a + 1
-until a = 10;
- 
-case i of
-  0: write('zero');
-  1: write('one');
-  2: write('two')
-end;
-</textarea></div>
-
-    <script>
-      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
-        lineNumbers: true,
-        mode: "text/x-pascal"
-      });
-    </script>
-
-    <p><strong>MIME types defined:</strong> <code>text/x-pascal</code>.</p>
-  </article>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Kfile-digest://app/assets/javascripts/codemirror/mode/pascal/index.html;TTF:charsetI"
-utf-8;F:digest"%»Æ*.€ÒÌÉòU4YG‹©–P
-¹Š¤CE:lengthiŠ:dependencies_digest"%ÿŞÄöıê&7ÂeòÊÄø•hºNSú8^£B²Ú:idI"E1da0ab7c730842a79eb1b3b487e8c66ec71d3e8c9d52e239a8ce57cbff0caeda;F:
-mtimel+åòËZ

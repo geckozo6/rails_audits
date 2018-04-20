@@ -1,25 +1,0 @@
-{:uriI"²file://app/assets/javascripts/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt?type=text/plain&id=d4e4551c391317529acbb06d5ce61cd401c7f9244389cc27780f87e34d805acd:ET:load_pathI"app/assets/javascripts;T:filenameI"\app/assets/javascripts/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt;T:	nameI"Ackeditor/plugins/specialchar/dialogs/lang/_translationstatus;T:logical_pathI"Eckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt;T:content_typeI"text/plain;T:sourceI"¼Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.md or http://ckeditor.com/license
-
-cs.js      Found: 118 Missing: 0
-cy.js      Found: 118 Missing: 0
-de.js      Found: 118 Missing: 0
-el.js      Found: 16 Missing: 102
-eo.js      Found: 118 Missing: 0
-et.js      Found: 31 Missing: 87
-fa.js      Found: 24 Missing: 94
-fi.js      Found: 23 Missing: 95
-fr.js      Found: 118 Missing: 0
-hr.js      Found: 23 Missing: 95
-it.js      Found: 118 Missing: 0
-nb.js      Found: 118 Missing: 0
-nl.js      Found: 118 Missing: 0
-no.js      Found: 118 Missing: 0
-tr.js      Found: 118 Missing: 0
-ug.js      Found: 39 Missing: 79
-zh-cn.js   Found: 118 Missing: 0
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"4processors:type=text/plain&file_type=text/plain;TTI"jfile-digest://app/assets/javascripts/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt;TTF:charsetI"
-utf-8;F:digest"%Ëø²Î$ê¤ñøGÁ~Ü•¸ÝîÁ7/¾•„ÈôŠ¡$Ú:lengthi¼:dependencies_digest"%§UèÇ,o2ä“tŠ5ôè:ìûÔ*©Õ*!ÅLCgŒ˜:idI"Ed4e4551c391317529acbb06d5ce61cd401c7f9244389cc27780f87e34d805acd;F:
-mtimel+åòËZ

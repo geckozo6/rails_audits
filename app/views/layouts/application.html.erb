@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Audits</title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', 'bootstrap' , 'neon-core', 'neon-theme', 'white', 'datatables', "select2", "select2-bootstrap", 'neon-forms', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'jquery-1.11.3.min','neon-custom', "datatables", "select2.min",'bootstrap', 'icheck' %>
-  </head>
+  <%= render 'partials/header'%>
 
+  
   <body>
 		<div class="page-container">
 	
@@ -26,7 +22,7 @@
 				<!-- logo collapse icon -->
 				<div class="sidebar-collapse">
 					<a href="#" class="sidebar-collapse-icon"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition -->
-						<i class="icon icon-list"></i>
+						<i class="e-icon-list"></i>
 					</a>
 				</div>
 
@@ -47,30 +43,88 @@
 	
 				
 				</li>
-				<li class="has-sub">
-					<a href="tables-main.html">
-						<i class="entypo-window"></i>
-						<span class="title">Tables</span>
-					</a>
-					<ul class="">
-						<li>
-							<a href="tables-main.html">
-								<span class="title">Basic Tables</span>
-							</a>
-						</li>
-						<li class="active">
-							<a href="tables-datatable.html">
-								<span class="title">Data Tables</span>
-							</a>
-						</li>
-					</ul>
+				<li class="has-sub">						
+					<%= link_to '<i class="entypo-window"></i><span class="title">Auditores</span>'.html_safe, auditors_path %>
+					<ul class="visible" style="">
+											<li>
+												<a href="index.html">
+													<span class="title">Dashboard 1</span>
+												</a>
+											</li>
+											<li>
+												<a href="dashboard-2.html">
+													<span class="title">Dashboard 2</span>
+												</a>
+											</li>
+											<li>
+												<a href="dashboard-3.html">
+													<span class="title">Dashboard 3</span>
+												</a>
+											</li>
+											<li class="has-sub">
+												<a href="skin-black.html">
+													<span class="title">Skins</span>
+												</a>
+												<ul>
+													<li>
+														<a href="skin-black.html">
+															<span class="title">Black Skin</span>
+														</a>
+													</li>
+													<li>
+														<a href="skin-white.html">
+															<span class="title">White Skin</span>
+														</a>
+													</li>
+													<li>
+														<a href="skin-purple.html">
+															<span class="title">Purple Skin</span>
+														</a>
+													</li>
+													<li>
+														<a href="skin-cafe.html">
+															<span class="title">Cafe Skin</span>
+														</a>
+													</li>
+													<li>
+														<a href="skin-red.html">
+															<span class="title">Red Skin</span>
+														</a>
+													</li>
+													<li>
+														<a href="skin-green.html">
+															<span class="title">Green Skin</span>
+														</a>
+													</li>
+													<li>
+														<a href="skin-yellow.html">
+															<span class="title">Yellow Skin</span>
+														</a>
+													</li>
+													<li>
+														<a href="skin-blue.html">
+															<span class="title">Blue Skin</span>
+														</a>
+													</li>
+													<li>
+														<a href="skin-facebook.html">
+															<span class="title">Facebook Skin</span>
+															<span class="badge badge-secondary badge-roundless">New</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="highlights.html">
+													<span class="title">What's New</span>
+													<span class="badge badge-success badge-roundless">v2.0</span>
+												</a>
+											</li>
+										</ul>
 				</li>
 		
 				<li>
-					<a href="charts.html">
-						<i class="entypo-chart-bar"></i>
-						<span class="title">Charts</span>
-					</a>
+					<%= link_to '<i class="entypo-window"></i><span class="title">Muestreos</span>'.html_safe, samples_path %>
 				</li>
 				
 			
@@ -80,16 +134,8 @@
 	<div class="main-content">
 				
 		<h1>Sistema de Auditorias de Calidad</h1>
-		<hr />
-		<script type="text/javascript">
-		
-		</script>
-		<%= yield %>
-									
-		
-		<h3>Table without DataTable Header</h3>
-		
-
+		<hr />									
+			
 
 		<script type="text/javascript">
 		jQuery( window ).load( function() {
@@ -138,79 +184,7 @@
 		}
 		</script>
 		
-		<table class="table table-bordered table-striped datatable" id="table-2">
-			<thead>
-				<tr>
-					<th>
-						<div class="checkbox checkbox-replace">
-							<input type="checkbox" id="chk-1">
-						</div>
-					</th>
-					<th>Student Name</th>
-					<th>Average Grade</th>
-					<th>Curriculum / Occupation</th>
-					<th>Actions</th>
-				</tr>
-			</thead>
-			
-			<tbody>
-			
-				<tr>
-					<td>
-						<div class="checkbox checkbox-replace">
-							<input type="checkbox" id="chk-1">
-						</div>
-					</td>
-					<td>Randy S. Smith</td>
-					<td>8.7</td>
-					<td>Social and human service</td>
-					<td>
-						<a href="#" class="btn btn-default btn-sm btn-icon icon-left">
-							<i class="entypo-pencil"></i>
-							Edit
-						</a>
-						
-						<a href="#" class="btn btn-danger btn-sm btn-icon icon-left">
-							<i class="entypo-cancel"></i>
-							Delete
-						</a>
-						
-						<a href="#" class="btn btn-info btn-sm btn-icon icon-left">
-							<i class="entypo-info"></i>
-							Profile
-						</a>
-					</td>
-				</tr>
-				
-				<tr>
-					<td>
-						<div class="checkbox checkbox-replace">
-							<input type="checkbox" id="chk-1">
-						</div>
-					</td>
-					<td>Ellen C. Jones</td>
-					<td>7.2</td>
-					<td>Education and development manager</td>
-					<td>
-						<a href="#" class="btn btn-default btn-sm btn-icon icon-left">
-							<i class="entypo-pencil"></i>
-							Edit
-						</a>
-						
-						<a href="#" class="btn btn-danger btn-sm btn-icon icon-left">
-							<i class="entypo-cancel"></i>
-							Delete
-						</a>
-						
-						<a href="#" class="btn btn-info btn-sm btn-icon icon-left">
-							<i class="entypo-info"></i>
-							Profile
-						</a>
-					</td>
-				</tr>
-				
-			</tbody>
-		</table>
+		<%= yield %>
 		
 		<br />
 		
@@ -230,6 +204,24 @@
 		
 		<script type="text/javascript">
 		jQuery( document ).ready( function( $ ) {
+			
+			var $table4 = jQuery( "#table-4" );
+		
+			$table4.DataTable( {
+				dom: 'Bfrtip',
+				buttons: [
+					'copyHtml5',
+					'excelHtml5',
+					'csvHtml5',
+					'pdfHtml5'
+				]
+			} );
+			
+			
+			
+			
+			
+			
 			var $table3 = jQuery("#table-3");
 			
 			var table3 = $table3.DataTable( {
@@ -259,6 +251,8 @@
 					}
 				} );
 			} );
+						
+			
 		} );
 		</script>
 		
@@ -313,21 +307,6 @@
 		<h3>Exporting Table Data</h3>
 		<br />
 		
-		<script type="text/javascript">
-		jQuery( document ).ready( function( $ ) {
-			var $table4 = jQuery( "#table-4" );
-			
-			$table4.DataTable( {
-				dom: 'Bfrtip',
-				buttons: [
-					'copyHtml5',
-					'excelHtml5',
-					'csvHtml5',
-					'pdfHtml5'
-				]
-			} );
-		} );		
-		</script>
 		
 		<table class="table table-bordered datatable" id="table-4">
 			<thead>
@@ -510,6 +489,16 @@
 			<span class="time">08:27</span>
 		</li>
 	</ul>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	
 </div>

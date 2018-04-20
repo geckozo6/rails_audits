@@ -1,61 +1,0 @@
-{:uriI"file://app/assets/javascripts/fullcalendar-2/demos/json/events.json?type=application/json&id=68d5e67a85981667fd14fee1dcd777669b870b62f2d0d5c83702ac64e81b94af:ET:load_pathI"app/assets/javascripts;T:filenameI"Aapp/assets/javascripts/fullcalendar-2/demos/json/events.json;T:	nameI"%fullcalendar-2/demos/json/events;T:logical_pathI"*fullcalendar-2/demos/json/events.json;T:content_typeI"application/json;T:sourceI"[
-  {
-    "title": "All Day Event",
-    "start": "2014-11-01"
-  },
-  {
-    "title": "Long Event",
-    "start": "2014-11-07",
-    "end": "2014-11-10"
-  },
-  {
-    "id": "999",
-    "title": "Repeating Event",
-    "start": "2014-11-09T16:00:00-05:00"
-  },
-  {
-    "id": "999",
-    "title": "Repeating Event",
-    "start": "2014-11-16T16:00:00-05:00"
-  },
-  {
-    "title": "Conference",
-    "start": "2014-11-11",
-    "end": "2014-11-13"
-  },
-  {
-    "title": "Meeting",
-    "start": "2014-11-12T10:30:00-05:00",
-    "end": "2014-11-12T12:30:00-05:00"
-  },
-  {
-    "title": "Lunch",
-    "start": "2014-11-12T12:00:00-05:00"
-  },
-  {
-    "title": "Meeting",
-    "start": "2014-11-12T14:30:00-05:00"
-  },
-  {
-    "title": "Happy Hour",
-    "start": "2014-11-12T17:30:00-05:00"
-  },
-  {
-    "title": "Dinner",
-    "start": "2014-11-12T20:00:00"
-  },
-  {
-    "title": "Birthday Party",
-    "start": "2014-11-13T07:00:00-05:00"
-  },
-  {
-    "title": "Click for Google",
-    "url": "http://google.com/",
-    "start": "2014-11-28"
-  }
-]
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Ofile-digest://app/assets/javascripts/fullcalendar-2/demos/json/events.json;TTF:charsetI"
-utf-8;F:digest"%BÊMhnRªåŠáŒ…¥ş ˜æã7y1ÜS{¨Ğ¥:lengthi:dependencies_digest"%«t€ù&šRf5ôÏÈ&××Û&ˆ‹03’¿n	»vv:idI"E68d5e67a85981667fd14fee1dcd777669b870b62f2d0d5c83702ac64e81b94af;F:
-mtimel+åòËZ

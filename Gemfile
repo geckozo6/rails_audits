@@ -53,5 +53,9 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'entypo-rails'
+gem 'entypo-rails', '~> 3.0'
 gem 'font-icons-rails', :git=> 'git://github.com/shorelabs/font-icons-rails.git'
+
+gem 'jquery-rails'
+
+

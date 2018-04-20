@@ -1,68 +1,0 @@
-{:uriI"ëfile://app/assets/javascripts/codemirror/demo/visibletabs.html?type=text/html&id=4e772eb0fde8357ba5c1ca14e1a9836b927d1e52acf13526e9817eadece409d0:ET:load_pathI"app/assets/javascripts;T:filenameI"<app/assets/javascripts/codemirror/demo/visibletabs.html;T:	nameI" codemirror/demo/visibletabs;T:logical_pathI"%codemirror/demo/visibletabs.html;T:content_typeI"text/html;T:sourceI"0<!doctype html>
-
-<title>CodeMirror: Visible tabs demo</title>
-<meta charset="utf-8"/>
-<link rel=stylesheet href="../doc/docs.css">
-
-<link rel="stylesheet" href="../lib/codemirror.css">
-<script src="../lib/codemirror.js"></script>
-<script src="../mode/clike/clike.js"></script>
-<style type="text/css">
-      .CodeMirror {border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
-      .cm-tab {
-         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAMCAYAAAAkuj5RAAAAAXNSR0IArs4c6QAAAGFJREFUSMft1LsRQFAQheHPowAKoACx3IgEKtaEHujDjORSgWTH/ZOdnZOcM/sgk/kFFWY0qV8foQwS4MKBCS3qR6ixBJvElOobYAtivseIE120FaowJPN75GMu8j/LfMwNjh4HUpwg4LUAAAAASUVORK5CYII=);
-         background-position: right;
-         background-repeat: no-repeat;
-      }
-    </style>
-<div id=nav>
-  <a href="http://codemirror.net"><img id=logo src="../doc/logo.png"></a>
-
-  <ul>
-    <li><a href="../index.html">Home</a>
-    <li><a href="../doc/manual.html">Manual</a>
-    <li><a href="https://github.com/marijnh/codemirror">Code</a>
-  </ul>
-  <ul>
-    <li><a class=active href="#">Visible tabs</a>
-  </ul>
-</div>
-
-<article>
-<h2>Visible tabs demo</h2>
-<form><textarea id="code" name="code">
-#include "syscalls.h"
-/* getchar:  simple buffered version */
-int getchar(void)
-{
-	static char buf[BUFSIZ];
-	static char *bufp = buf;
-	static int n = 0;
-	if (n == 0) {  /* buffer is empty */
-		n = read(0, buf, sizeof buf);
-		bufp = buf;
-	}
-	return (--n >= 0) ? (unsigned char) *bufp++ : EOF;
-}
-</textarea></form>
-
-<p>Tabs inside the editor are spans with the
-class <code>cm-tab</code>, and can be styled.</p>
-
-    <script>
-      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
-        lineNumbers: true,
-        tabSize: 4,
-        indentUnit: 4,
-        indentWithTabs: true,
-        mode: "text/x-csrc"
-      });
-    </script>
-
-  </article>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Jfile-digest://app/assets/javascripts/codemirror/demo/visibletabs.html;TTF:charsetI"
-utf-8;F:digest"%üÖ2ÛË™®t˛ã∑èW∑ »*Ö|—±“l
-ãÁtv:lengthi0:dependencies_digest"%?Â&èÃ’≤ÿ∑ï…<Ä'QÎ˙D”f!∂ˆNéîÆñ):idI"E4e772eb0fde8357ba5c1ca14e1a9836b927d1e52acf13526e9817eadece409d0;F:
-mtimel+ÂÚÀZ

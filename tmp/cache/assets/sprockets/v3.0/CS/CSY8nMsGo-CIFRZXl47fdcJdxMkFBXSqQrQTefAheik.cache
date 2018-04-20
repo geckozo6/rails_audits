@@ -1,62 +1,0 @@
-{:uriI"file://app/assets/javascripts/ckeditor/samples/appendto.html?type=text/html&id=9d4de16c810cf73587ba41636e84c4d441d393f61a631cf52a0f04f604e994e8:ET:load_pathI"app/assets/javascripts;T:filenameI":app/assets/javascripts/ckeditor/samples/appendto.html;T:	nameI"ckeditor/samples/appendto;T:logical_pathI"#ckeditor/samples/appendto.html;T:content_typeI"text/html;T:sourceI"ã<!DOCTYPE html>
-<!--
-Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.md or http://ckeditor.com/license
--->
-<html>
-<head>
-	<title>CKEDITOR.appendTo &mdash; CKEditor Sample</title>
-	<meta charset="utf-8">
-	<script src="../ckeditor.js"></script>
-	<link rel="stylesheet" href="sample.css">
-</head>
-<body>
-	<h1 class="samples">
-		<a href="index.html">CKEditor Samples</a> &raquo; Append To Page Element Using JavaScript Code
-	</h1>
-	<div id="section1">
-		<div class="description">
-			<p>
-				<code>CKEDITOR.appendTo</code> is basically to place editors
-				inside existing DOM elements. Unlike <code>CKEDITOR.replace</code>,
-				a target container to be replaced is no longer necessary. A new editor
-				instance is inserted directly wherever it is desired.
-			</p>
-<pre class="samples">CKEDITOR.appendTo( '<em>container_id</em>',
-	{ /* Configuration options to be used. */ }
-	'Editor content to be used.'
-);</pre>
-		</div>
-		<script>
-
-			// This call can be placed at any point after the
-			// <textarea>, or inside a <head><script> in a
-			// window.onload event handler.
-
-			// Replace the <textarea id="editor"> with an CKEditor
-			// instance, using default configurations.
-			CKEDITOR.appendTo( 'section1',
-				null,
-				'<p>This is some <strong>sample text</strong>. You are using <a href="http://ckeditor.com/">CKEditor</a>.</p>'
-			);
-
-		</script>
-	</div>
-	<br>
-	<div id="footer">
-		<hr>
-		<p>
-			CKEditor - The text editor for the Internet - <a class="samples" href="http://ckeditor.com/">http://ckeditor.com</a>
-		</p>
-		<p id="copy">
-			Copyright &copy; 2003-2013, <a class="samples" href="http://cksource.com/">CKSource</a> - Frederico
-			Knabben. All rights reserved.
-		</p>
-	</div>
-</body>
-</html>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Hfile-digest://app/assets/javascripts/ckeditor/samples/appendto.html;TTF:charsetI"
-utf-8;F:digest"%ğAÚò½ÛpÛ¹GÙÈ£ÄYãÁşz	L‰F»µí†Ş:lengthiã:dependencies_digest"%ø”ì/\["Bû‘9*VËMk\ÇúÔKÀ©z½*:idI"E9d4de16c810cf73587ba41636e84c4d441d393f61a631cf52a0f04f604e994e8;F:
-mtimel+åòËZ

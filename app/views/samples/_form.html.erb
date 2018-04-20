@@ -1,0 +1,49 @@
+<%= form_with(model: sample, local: true) do |form| %>
+  <% if sample.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sample.errors.count, "error") %> prohibited this sample from being saved:</h2>
+
+      <ul>
+      <% sample.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="field">
+    <%= form.label :sample_type %>
+	<%=form.select :sample_type, [ ['Muestreo Simple', 'Simple'], ['Doble Sampleo', 'Doble'] ] %>
+   
+  </div>
+
+  <div class="field">
+    <%= form.label :aql %>
+    <%= form.text_area :aql, id: :sample_aql %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :sampledate  %>
+    <%= form.date_select :sampledate, id: :sample_sampledate %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :lot %>
+    <%= form.text_area :lot, id: :sample_lot %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :equipment_id %>
+	<%= form.collection_select(:equipment_id, Equipment.all, :id, :equipment_type) %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :auditor_id %>
+	<%= form.collection_select(:auditor_id, Auditor.all, :id, :name) %>
+  </div>
+  
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

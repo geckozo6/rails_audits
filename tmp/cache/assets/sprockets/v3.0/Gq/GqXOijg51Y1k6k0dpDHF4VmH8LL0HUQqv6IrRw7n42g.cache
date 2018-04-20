@@ -1,57 +1,0 @@
-{:uriI"åfile://app/assets/javascripts/codemirror/demo/marker.html?type=text/html&id=cbcd9181d64c39794e2080c5e4c64bccbde368cee9e444fd662efc515234fe54:ET:load_pathI"app/assets/javascripts;T:filenameI"7app/assets/javascripts/codemirror/demo/marker.html;T:	nameI"codemirror/demo/marker;T:logical_pathI" codemirror/demo/marker.html;T:content_typeI"text/html;T:sourceI"∑<!doctype html>
-
-<title>CodeMirror: Breakpoint Demo</title>
-<meta charset="utf-8"/>
-<link rel=stylesheet href="../doc/docs.css">
-
-<link rel="stylesheet" href="../lib/codemirror.css">
-<script src="../lib/codemirror.js"></script>
-<script src="../mode/javascript/javascript.js"></script>
-<style type="text/css">
-      .breakpoints {width: .8em;}
-      .breakpoint { color: #822; }
-      .CodeMirror {border: 1px solid #aaa;}
-    </style>
-<div id=nav>
-  <a href="http://codemirror.net"><img id=logo src="../doc/logo.png"></a>
-
-  <ul>
-    <li><a href="../index.html">Home</a>
-    <li><a href="../doc/manual.html">Manual</a>
-    <li><a href="https://github.com/marijnh/codemirror">Code</a>
-  </ul>
-  <ul>
-    <li><a class=active href="#">Breakpoint</a>
-  </ul>
-</div>
-
-<article>
-<h2>Breakpoint Demo</h2>
-<form><textarea id="code" name="code">
-var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
-  lineNumbers: true,
-  gutters: ["CodeMirror-linenumbers", "breakpoints"]
-});
-editor.on("gutterClick", function(cm, n) {
-  var info = cm.lineInfo(n);
-  cm.setGutterMarker(n, "breakpoints", info.gutterMarkers ? null : makeMarker());
-});
-
-function makeMarker() {
-  var marker = document.createElement("div");
-  marker.style.color = "#822";
-  marker.innerHTML = "‚óè";
-  return marker;
-}
-</textarea></form>
-
-<p>Click the line-number gutter to add or remove 'breakpoints'.</p>
-
-    <script>eval(document.getElementById("code").value);</script>
-
-  </article>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Efile-digest://app/assets/javascripts/codemirror/demo/marker.html;TTF:charsetI"
-utf-8;F:digest"%â8∫VÃ3"â‰nîK !_√Ì«QjYÒs‘:lengthi∑:dependencies_digest"%ˆ∞ùe_Ωò\©©4 ‰:wif{C}^v]3æmÄ6:idI"Ecbcd9181d64c39794e2080c5e4c64bccbde368cee9e444fd662efc515234fe54;F:
-mtimel+ÂÚÀZ

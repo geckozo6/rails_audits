@@ -1,43 +1,0 @@
-{:uriI"”file://app/assets/javascripts/aci-tree/aciTree.jquery.json?type=application/json&id=3e1016fb39d727ee3ff89409773796359ec1acce87182376de4e0df48f054ec2:ET:load_pathI"app/assets/javascripts;T:filenameI"8app/assets/javascripts/aci-tree/aciTree.jquery.json;T:	nameI"aci-tree/aciTree.jquery;T:logical_pathI"!aci-tree/aciTree.jquery.json;T:content_typeI"application/json;T:sourceI"{{
-    "name": "aciTree",
-    "title": "aciTree - A customizable treeview control",
-    "description": "aciTree renders a treeview control based on a simple data structure. The tree can be lazy loaded node by node through AJAX or the entire tree can be loaded in one go, including directly from a JavaScript variable. A simple PHP implementation for a file system tree is provided as an example, but any server-side language can be used. The tree can be manipulated using the aciTree API. The tree items can be added, loaded, updated, removed, their order can be changed ... and much more.",
-    "keywords": [
-    "treeview",
-    "tree",
-    "ui",
-    "ajax"
-    ],
-    "version": "4.5.0-rc.3",
-    "author": {
-        "name": "Dragos Ursu",
-        "email":"dragosu@acoderinsights.ro",
-        "url": "https://github.com/dragosu"
-    },
-    "maintainers": [{
-        "name": "Dragos Ursu",
-        "email":"dragosu@acoderinsights.ro",
-        "url": "https://github.com/dragosu"
-    }],
-    "licenses": [{
-        "type": "MIT",
-        "url": "http://acoderinsights.ro/source/aciTree/mit-licence.txt"
-    },{
-        "type": "GPLv2",
-        "url": "http://acoderinsights.ro/source/aciTree/gpl-v2-licence.txt"
-    }],
-    "homepage": "http://acoderinsights.ro/en/aciTree-tree-view-with-jQuery",
-    "demo": "http://acoderinsights.ro/source/aciTree/aciTree.html",
-    "download": "http://acoderinsights.ro/source/zip/aciTree.zip",
-    "docs": "http://acoderinsights.ro/source/aciTree/documentation.html",
-    "bugs": "https://github.com/dragosu/jquery-aciTree/issues",
-    "dependencies": {
-        "jquery": ">=1.9.0",
-        "aciPlugin": ">=1.5.1"
-    }
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Ffile-digest://app/assets/javascripts/aci-tree/aciTree.jquery.json;TTF:charsetI"
-utf-8;F:digest"%ÅÓ:Û×Ò~¼i˜²¾2qÛñúiëö'v‡JÇï:lengthi{:dependencies_digest"%g¯JÍŒ6 l¹XG—I2Ë,jÈ_öğF™éÉko~:idI"E3e1016fb39d727ee3ff89409773796359ec1acce87182376de4e0df48f054ec2;F:
-mtimel+åòËZ

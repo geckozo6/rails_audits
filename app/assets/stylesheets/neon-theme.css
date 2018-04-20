@@ -5672,6 +5672,7 @@ fieldset[disabled] .calendar-env .calendar-body .fc-content .fc-view table tbody
   background-clip: padding-box;
 }
 .profile-env > header {
+	padding-bottom: 40px;
   position: relative;
   z-index: 20;
   margin-top: 30px;
@@ -5813,7 +5814,7 @@ fieldset[disabled] .calendar-env .calendar-body .fc-content .fc-view table tbody
 }
 .profile-env section.profile-info-tabs {
   position: relative;
-  background: #f1f1f1;
+  background: #333333;
   margin-left: -20px;
   margin-right: -20px;
   padding: 20px;
@@ -6137,6 +6138,7 @@ fieldset[disabled] .calendar-env .calendar-body .fc-content .fc-view table tbody
   .profile-env > header .profile-info-sections .profile-name strong,
   .profile-env > header .profile-info-sections .profile-stat h3 {
     font-size: 16px;
+	text-align: center;
   }
   .profile-env > header .profile-info-sections {
     margin-top: 0;

@@ -1,0 +1,93 @@
+		<h3>Auditores</h3>
+		
+		
+		<table class="table table-bordered table-striped datatable" id="table-2">
+			<thead>
+				<tr>
+					<th>
+						<div class="checkbox checkbox-replace">
+							<input type="checkbox" id="chk-1">
+						</div>
+					</th>
+					<th>ID del Muestreo</th>
+					<th>Tipo de Muestreo</th>
+					<th>AQL</th>
+					<th>Fecha</th>
+					<th>Lote</th>
+					<th>Tipo Equipo</th>
+					<th>Auditor</th>
+					<th>Acciones</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+			    <% @samples.each do |sample| %>
+			         <tr>
+	 					<td>
+	 						<div class="checkbox checkbox-replace">
+	 							<input type="checkbox" id="chk-1">
+	 						</div>
+	 					</td>
+					   <td><%= sample.id %></td>
+			           <td><%= sample.sample_type %></td>
+			           <td><%= sample.aql %></td>
+					   <td><%= sample.sampledate %></td>
+					   <td><%= sample.lot %></td>
+					   <td><%= sample.equipment.equipment_type %></td>
+					   <td><%= sample.auditor.name %></td>
+   						<td>
+							
+							<%= link_to '<i class="entypo-pencil"></i>Editar'.html_safe, edit_sample_path(sample), 
+								class: "btn btn-default btn-sm btn-icon icon-left"  %>
+							
+							<%= link_to '<i class="entypo-cancel"></i>Borrar'.html_safe, sample, 
+								class: "btn btn-danger btn-sm btn-icon icon-left", 
+								method: :delete, 
+								data: { confirm: 'Are you sure?' } %>
+																
+
+						
+   							<a href="#" class="btn btn-info btn-sm btn-icon icon-left">
+   								<i class="entypo-info"></i>
+   									Profile
+   							</a>
+   						</td>
+			         </tr>
+			  <% end %>
+			  
+				<% if @samples.size== 0%>
+					<em> No existen auditores</em>
+				<% end %>
+			</tbody>
+		</table>
+
+
+
+
+
+
+<p id="notice"><%= notice %></p>
+
+<h1>Samples</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @samples.each do |sample| %>
+      <tr>
+        <td><%= link_to 'Show', sample %></td>
+        <td><%= link_to 'Edit', edit_sample_path(sample) %></td>
+        <td><%= link_to 'Destroy', sample, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sample', new_sample_path %>

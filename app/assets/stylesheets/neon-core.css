@@ -7887,7 +7887,7 @@ img.full-width {
   width: 100%;
 }
 .form-groups-bordered > .form-group {
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb !important;
   padding-bottom: 15px;
   padding-top: 15px;
   margin-bottom: 0px;

@@ -1,0 +1,144 @@
+<p id="notice"><%= notice %></p>
+
+		
+	<div class="profile-env">
+		
+		<header class="row">
+			
+			<div class="col-sm-2">
+				
+				
+			</div>
+			
+			<div class="col-sm-7">
+				
+				<ul class="profile-info-sections">
+					<li>
+						<div class="profile-name">
+							<strong>
+								<%= link_to @auditor.name %>
+						
+							</strong>
+							<span><a href="#">Co-Founder at Laborator</a></span>
+						</div>
+					</li>
+					
+					<li>
+						<div class="profile-stat">
+							<h3><%=@auditor_samples.count %></h3>
+							<span><a href="#">Muestreos</a></span>
+						</div>
+					</li>
+					
+					<li>
+						<div class="profile-stat">
+							<h3>108</h3>
+							<span><a href="#">following</a></span>
+						</div>
+					</li>
+				</ul>
+				
+			</div>
+			
+			<div class="col-sm-3">
+				<div class="profile-buttons">
+					<%= link_to '<i class="e-icon-pencil"></i>Editar'.html_safe, edit_auditor_path(@auditor), class: 'btn btn-default' %>
+					<%= link_to '<i class="e-icon-pencil"></i>Editar'.html_safe, edit_auditor_path(@auditor), class: 'btn btn-default' %>
+				</div>
+			</div>
+
+		</header>
+		
+		<section class="profile-info-tabs">
+			
+			<div class="row">
+									
+					<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th class="text-center">ID</th>
+											<th width="20%">Tipo de Muestreo</th>
+											<th>AQL</th>
+											<th>Fecha</th>
+											<th>Lote</th>
+											<th>Tipo Equipo</th>
+											<th>Piezas Muestreadas</th>
+											<th>Piezas Rechazadas</th>
+										</tr>
+									</thead>
+				
+									<tbody>
+						  			    <% @auditor_samples.each do |sample| %>
+						  			         <tr>
+						  					   <td class="text-center"><%= sample.id %></td>
+						  			           <td><%= sample.sample_type %></td>
+						  			           <td class="text-center"><%= sample.aql %></td>
+						  					   <td><%= sample.sampledate %></td>
+						  					   <td class="text-center"><%= sample.lot %></td>
+						  					   <td><%= sample.equipment.equipment_type %></td>
+											   <td>Total: <%= sample.pieces.count %></td>
+											   <td>Rechazadas: <%= sample.pieces.rejected.count %></td>
+						  			         </tr>
+						  			  <% end %>
+									</tbody>
+								</table>
+					
+					<ul class="user-details">
+						<li>
+							<a href="#">
+								<i class="entypo-location"></i>
+								Prishtina
+							</a>
+						</li>
+						
+						<li>
+							<a href="#">
+								<i class="entypo-suitcase"></i>
+								Works as <span>Laborator</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#">
+								<i class="entypo-calendar"></i>
+								16 October
+							</a>
+						</li>
+					</ul>
+					
+					
+				
+			</div>
+			
+		</section>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+<p>
+  <strong>Name:</strong>
+  <%= @auditor.name %>
+</p>
+
+<p>
+  <strong>Employee:</strong>
+  <%= @auditor.employee %>
+</p>
+
+ <p>
+	<strong>Lotes Muestreados</strong>
+	 <ul>
+        <% @auditor.samples.each do |sample| %>
+          <li><%= link_to sample.lot, sample %></li>
+        <% end %>
+      </ul>
+</p>
+
+ |
+<%= link_to 'Back', auditors_path %>

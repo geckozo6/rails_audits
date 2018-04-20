@@ -1,0 +1,55 @@
+		<h3>Auditores</h3>
+		
+		
+		<table class="table table-bordered table-striped datatable" id="table-2">
+			<thead>
+				<tr>
+					<th>
+						<div class="checkbox checkbox-replace">
+							<input type="checkbox" id="chk-1">
+						</div>
+					</th>
+					<th>Nombre del Auditor</th>
+					<th>No. de Empleado</th>
+					<th>Acciones</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+			    <% @auditors.each do |auditor| %>
+			         <tr>
+	 					<td>
+	 						<div class="checkbox checkbox-replace">
+	 							<input type="checkbox" id="chk-1">
+	 						</div>
+	 					</td>
+			           <td><%= auditor.name %></td>
+			           <td><%= auditor.employee %></td>
+   						<td>
+							
+							<%= link_to '<i class="entypo-pencil"></i>Editar'.html_safe, auditor_edit_path(:id => auditor.id), class: "btn btn-default btn-sm btn-icon icon-left"  %>
+																
+   							<a href="#" class="btn btn-default btn-sm btn-icon icon-left">
+   								<i class=""></i>
+   									Edit
+   								</a>
+						
+   							<a href="#" class="btn btn-danger btn-sm btn-icon icon-left">
+   								<i class="entypo-cancel"></i>
+   									Delete
+   								</a>
+						
+   							<a href="#" class="btn btn-info btn-sm btn-icon icon-left">
+   								<i class="entypo-info"></i>
+   									Profile
+   							</a>
+   						</td>
+			         </tr>
+			  <% end %>
+				<% if @auditors.size== 0%>
+					<em> No existen auditores</em>
+				<% end %>
+			</tbody>
+		</table>
+
+

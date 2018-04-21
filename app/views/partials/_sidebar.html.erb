@@ -1,0 +1,25 @@
+	<div class="sidebar-menu">
+
+		<div class="sidebar-menu-inner">
+			
+			<header class="logo-env">
+				<!-- logo -->
+				<div class="logo">
+					<%= image_tag ("/assets/logo\@2x.png") %>
+				</div>
+			</header>
+			
+									
+			<ul id="main-menu" class="main-menu">
+				<!-- add class "multiple-expanded" to allow multiple submenus to open -->
+				<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+				<li>						
+					<%= link_to '<i class="entypo-list"></i><span class="title">Muestreos</span>'.html_safe, samples_path %>
+				</li>
+		
+				<li>
+					<%= link_to '<i class="entypo-user"></i><span class="title">Auditores</span>'.html_safe, auditors_path %>
+				</li>	
+		</div>
+
+	</div>

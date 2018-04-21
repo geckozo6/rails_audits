@@ -1206,15 +1206,52 @@ h6 .small,
   line-height: 1;
   color: #999999;
 }
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
-  margin-top: 17px;
-  margin-bottom: 8.5px;
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 5 px;
+  margin-bottom: 5 px;
 }
+.form-group {
+  border-bottom: 1px solid #ebebeb !important;
+  padding-bottom: 15px !important;
+  padding-top: 15px !important;
+  margin-bottom: 0px !important;
+  height: 70px;
+}
+.page-title {
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-family: oswald;
+  text-transform: uppercase;
+  color: #489ea3;
+  padding-bottom: 30px;
+}
+.auditor-name {
+	
+}
+.profile-name h2 {
+	text-transform:	uppercase;
+}
+.profile-info-sections h2 {
+  font-family: oswald;
+  margin-bottom: 5px;
+}
+div.profile-env > header{
+	margin-top: 0px;
+}
+h1.main-title { 
+	color: #e94680; 
+	font-family: 'Oswald', sans-serif;
+	font-size: 50px; 
+	font-weight: 800; 
+	line-height: 20px; 
+	margin: 0 0 24px; 
+	text-align: center; 
+}
+.form-field {
+	padding-top: 10px;
+}
+
 h1 small,
 .h1 small,
 h2 small,
@@ -2617,9 +2654,8 @@ input[type="search"] {
     line-height: 42px;
   }
 }
-.form-group {
-  margin-bottom: 15px;
-}
+
+
 .radio,
 .checkbox {
   position: relative;

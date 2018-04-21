@@ -324,6 +324,34 @@ table.dataTable td {
   border: 1px solid transparent;
   border-radius: 2px;
 }
+
+.paginate_button {
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 1.5em !important;
+  padding: 0.5em 1em !important;
+  margin-left: 2px !important;
+  text-align: center;
+  text-decoration: none !important;
+  cursor: pointer;
+  *cursor: hand;
+  color: #333 !important;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+div.dataTables_paginate a.paginate_button.first,
+div.dataTables_paginate a.paginate_button.previous {
+  position: relative !important;
+  padding-left: 24px !important;
+}
+
+div.dataTables_paginate a.paginate_button.next,
+div.dataTables_paginate a.paginate_button.last {
+  position: relative !important;
+  padding-right: 24px !important;
+}
+
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
   color: #333 !important;
   border: 1px solid #979797;

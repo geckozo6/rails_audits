@@ -4,7 +4,7 @@ class SamplesController < ApplicationController
   # GET /samples
   # GET /samples.json
   def index
-    @samples = Sample.all
+    @samples = Sample.all.order(sampledate: :desc)
   end
 
   # GET /samples/1
@@ -70,6 +70,6 @@ class SamplesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sample_params 
-      params.require(:sample).permit(:sample_type, :aql, :sampledata, :lot, :equipment_id, :auditor_id)
+      params.require(:sample).permit(:sample_type, :aql, :sampledate, :lot, :equipment_id, :auditor_id)
     end
 end

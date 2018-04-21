@@ -12,11 +12,17 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
-Rails.application.config.assets.precompile += %w( jquery-1.11.3.min.js  bootstrap.js bootstrap.css neon-custom.js neon-core.css entypo.css )
-Rails.application.config.assets.precompile += %w( select2.min.js select2.css select2-bootstrap.css)
-Rails.application.config.assets.precompile += %w( datatables.js datatables.css )
-Rails.application.config.assets.precompile += %w( neon-forms.css neon-theme.css white.css)
-Rails.application.config.assets.precompile += %w( neon-custom.js icheck.js )
-
+Rails.application.config.assets.precompile += %w( jquery-1.11.3.min.js entypo.css )
+Rails.application.config.assets.precompile += %w( neon-theme.css white.css)
+Rails.application.config.assets.precompile += %w( bootstrap.js bootstrap.css )
+Rails.application.config.assets.precompile += %w( neon-custom.js)
+Rails.application.config.assets.precompile += %w( select2.css select2-bootstrap.css select2.js )
+Rails.application.config.assets.precompile += %w( datatables.js )
+Rails.application.config.assets.precompile += %w( icheck.js )
+Rails.application.config.assets.precompile += %w( bootstrap-datepicker.js )
+Rails.application.config.assets.precompile += %w( neon-forms.css )
+Rails.application.config.assets.precompile += %w( datatables.css ) 
+Rails.application.config.assets.precompile += %w( neon-core.css )
+#Rails.application.config.assets.precompile += %w( entypo.css )
 
 

@@ -5,6 +5,7 @@ class AuditorsController < ApplicationController
   # GET /auditors.json
   def index
     @auditors = Auditor.all
+    @last_auditor = Auditor.last
   end
 
   # GET /auditors/1

@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   #get 'auditors/new'
 
   #get 'auditors/edit'
+  
+  root 'samples#index'
 
   resources :auditors
 

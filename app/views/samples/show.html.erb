@@ -32,26 +32,22 @@
   				<form role="form" class="form-horizontal form-groups-bordered">
 	
   					<div class="form-group">
-  						<label for="field-1" class="col-sm-2 control-label">Nombre del Auditor</label>
-						
+  						<label for="field-1" class="col-sm-2 control-label">ID</label>
   						<div class="col-sm-8">
+							<%= @sample.id %>
   						</div>
   					</div>
 					
   					<div class="form-group">
-  						<label for="field-1" class="col-sm-2 control-label">Número de Empleado</label>
+  						<label for="field-1" class="col-sm-2 control-label">Tipo de Muestreo</label>
 						
   						<div class="col-sm-8">
-							
+							<%= @sample.sample_type %>
   						</div>
   					</div>
 					
 					
-  					<div class="form-group">
-  						<div class="col-sm-offset-3 col-sm-5 actions">
-							
-  						</div>
-  					</div>
+  					
   				</form>
 				
   			</div>

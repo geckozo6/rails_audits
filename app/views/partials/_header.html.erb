@@ -1,11 +1,20 @@
   <head>
     <title>Audits</title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag 'bootstrap', 'application', 'neon-core', 
-		'neon-theme', 'neon-forms', 'white', 'datatables', 'select2', 
+	<%# stylesheet_link_tag 'bootstrap' %>
+    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Lato|Oswald|Playfair+Display|Raleway|Roboto',
+		'neon-theme', 'white', 
 		'select2-bootstrap', 'entypo', 
 		media: 'all', 'data-turbolinks-track': 'reload' %>
-	<%= javascript_include_tag 'jquery-1.11.3.min'%>
-    <%= javascript_include_tag 'application', 'bootstrap', 'neon-custom', 'select2.min',
-		'datatables', 'icheck' %>
+	<%# stylesheet_link_tag 'entypo' %>
+	<%= stylesheet_link_tag 'datatables' %>
+	<%= stylesheet_link_tag 'select2' %>
+	<%= javascript_include_tag 'jquery-1.11.3.min' %>
+	<%= javascript_include_tag 'neon-custom' %>
+	<%= javascript_include_tag	'bootstrap' %>
+    <%= javascript_include_tag 'application', 'icheck' %>
+	<%= javascript_include_tag 'datatables' %>
+	<%= javascript_include_tag 'select2' %>
+	<%= stylesheet_link_tag 'neon-forms' %>
+	<%= stylesheet_link_tag 'neon-core' %>
   </head>

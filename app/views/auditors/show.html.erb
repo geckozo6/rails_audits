@@ -1,39 +1,34 @@
 <p id="notice"><%= notice %></p>
 
-		
+	<h1 class="page-title">Perfil del Auditor</h1>	
 	<div class="profile-env">
 		
 		<header class="row">
-			
-			<div class="col-sm-2">
-				
-				
-			</div>
 			
 			<div class="col-sm-7">
 				
 				<ul class="profile-info-sections">
 					<li>
 						<div class="profile-name">
-							<strong>
+							<h2>
 								<%= link_to @auditor.name %>
 						
-							</strong>
-							<span><a href="#">Co-Founder at Laborator</a></span>
+							</h2>
+							<span><a href="#">Auditor</a></span>
 						</div>
 					</li>
 					
 					<li>
 						<div class="profile-stat">
-							<h3><%=@auditor_samples.count %></h3>
+							<h2><%=@auditor_samples.count %></h2>
 							<span><a href="#">Muestreos</a></span>
 						</div>
 					</li>
 					
 					<li>
 						<div class="profile-stat">
-							<h3>108</h3>
-							<span><a href="#">following</a></span>
+							<h2>108</h2>
+							<span><a href="#">ejemplo</a></span>
 						</div>
 					</li>
 				</ul>
@@ -43,7 +38,8 @@
 			<div class="col-sm-3">
 				<div class="profile-buttons">
 					<%= link_to '<i class="e-icon-pencil"></i>Editar'.html_safe, edit_auditor_path(@auditor), class: 'btn btn-default' %>
-					<%= link_to '<i class="e-icon-pencil"></i>Editar'.html_safe, edit_auditor_path(@auditor), class: 'btn btn-default' %>
+					<%= link_to '<i class="entypo-home"></i>Lista Auditores'.html_safe, auditors_path, class: 'btn btn-blue'  %>
+					
 				</div>
 			</div>
 
@@ -83,62 +79,8 @@
 									</tbody>
 								</table>
 					
-					<ul class="user-details">
-						<li>
-							<a href="#">
-								<i class="entypo-location"></i>
-								Prishtina
-							</a>
-						</li>
-						
-						<li>
-							<a href="#">
-								<i class="entypo-suitcase"></i>
-								Works as <span>Laborator</span>
-							</a>
-						</li>
-						
-						<li>
-							<a href="#">
-								<i class="entypo-calendar"></i>
-								16 October
-							</a>
-						</li>
-					</ul>
-					
-					
-				
 			</div>
 			
 		</section>
 		
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-<p>
-  <strong>Name:</strong>
-  <%= @auditor.name %>
-</p>
-
-<p>
-  <strong>Employee:</strong>
-  <%= @auditor.employee %>
-</p>
-
- <p>
-	<strong>Lotes Muestreados</strong>
-	 <ul>
-        <% @auditor.samples.each do |sample| %>
-          <li><%= link_to sample.lot, sample %></li>
-        <% end %>
-      </ul>
-</p>
-
- |
-<%= link_to 'Back', auditors_path %>

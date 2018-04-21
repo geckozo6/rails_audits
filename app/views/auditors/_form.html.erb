@@ -13,9 +13,6 @@
   <% end %>
   	
 	 
-
-  <h2>Basic Form Elements</h2>
-
   <br />
 
   <div class="row">
@@ -29,7 +26,7 @@
   				</div>
 				
   				<div class="panel-options">
-  					<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+  					<a id="algo" href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
   					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
   					<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
   					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
@@ -43,26 +40,30 @@
   					<div class="form-group">
   						<label for="field-1" class="col-sm-2 control-label">Nombre del Auditor</label>
 						
-  						<div class="col-sm-8">
-  							<%= form.text_field :name, id: :auditor_name, class: 'form-control', id: 'field-1', placeholder: 'Nombre del Auditor' %>
+  						<div class="col-sm-4">
+  							<%= form.text_field :name, id: :auditor_name, class: 'form-control input-lg', id: 'field-1', placeholder: 'Nombre del Auditor' %>
   						</div>
   					</div>
 					
   					<div class="form-group">
   						<label for="field-1" class="col-sm-2 control-label">Número de Empleado</label>
 						
-  						<div class="col-sm-8">
-  							<%= form.text_field :employee, id: :auditor_employee, class: 'form-control', id: 'field-2', placeholder: '# Empleado' %>
+  						<div class="col-sm-4">
+  							<%= form.text_field :employee, id: :auditor_employee, class: 'form-control input-lg', id: 'field-2', placeholder: '# Empleado' %>
   						</div>
   					</div>
 					
-					
-  					<div class="form-group">
-  						<div class="col-sm-offset-3 col-sm-5 actions">
-  							<%= form.submit 'Actualizar', class: 'btn btn-default' %>
+
+  					<div class="post-save-changes">
+  						<div class="col-sm-offset-2 col-sm-2 actions update-button">
+  							<%# form.submit "<i class='entypo-check'></i>Actualizar".html_safe, class: 'btn btn-green btn-lg btn-block btn-icon' %>
+							<%= button_tag(type: "submit", class: "btn btn-green btn-lg btn-block btn-icon") do %>
+							    <i class='entypo-check'></i>Enviar
+							<% end %>
+							
   						</div>
   					</div>
-  				</form><form></form> 
+  				</form>
 				
   			</div>
 		
@@ -70,5 +71,29 @@
 	
   	</div>
   </div>
+  
+	<!-- Sample Modal (Default skin) -->
+	<div class="modal fade" id="sample-modal-dialog-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Widget Options - Default Modal</h4>
+				</div>
+				
+				<div class="modal-body">
+					<p>Now residence dashwoods she excellent you. Shade being under his bed her. Much read on as draw. Blessing for ignorant exercise any yourself unpacked. Pleasant horrible but confined day end marriage. Eagerness furniture set preserved far recommend. Did even but nor are most gave hope. Secure active living depend son repair day ladies now.</p>
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  
   
 <% end %>

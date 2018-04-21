@@ -55,6 +55,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'entypo-rails', '~> 3.0'
 gem 'font-icons-rails', :git=> 'git://github.com/shorelabs/font-icons-rails.git'
+#gem 'jquery-datatables-rails', '~> 3.4.0'
+
+
 
 gem 'jquery-rails'
 

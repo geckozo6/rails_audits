@@ -5814,7 +5814,7 @@ fieldset[disabled] .calendar-env .calendar-body .fc-content .fc-view table tbody
 }
 .profile-env section.profile-info-tabs {
   position: relative;
-  background: #333333;
+  background: white;
   margin-left: -20px;
   margin-right: -20px;
   padding: 20px;

@@ -59190,3 +59190,41 @@ Processing by SamplesController#index as HTML
 Completed 200 OK in 92ms (Views: 86.9ms | ActiveRecord: 1.6ms)
 
 
+Started GET "/samples/new" for 127.0.0.1 at 2018-04-21 14:06:05 -0500
+Processing by SamplesController#new as HTML
+  Rendering samples/new.html.erb within layouts/application
+  [1m[36mEquipment Load (0.4ms)[0m  [1m[34mSELECT "equipment".* FROM "equipment"[0m
+  [1m[36mAuditor Load (0.2ms)[0m  [1m[34mSELECT "auditors".* FROM "auditors"[0m
+  Rendered samples/_form.html.erb (55.7ms)
+  Rendered samples/new.html.erb within layouts/application (58.6ms)
+  Rendered partials/_header.html.erb (58.0ms)
+  Rendered partials/_sidebar.html.erb (0.7ms)
+Completed 200 OK in 147ms (Views: 140.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/samples/new" for 127.0.0.1 at 2018-04-21 15:58:54 -0500
+Processing by SamplesController#new as HTML
+  Rendering samples/new.html.erb within layouts/application
+  [1m[36mEquipment Load (0.3ms)[0m  [1m[34mSELECT "equipment".* FROM "equipment"[0m
+  [1m[36mAuditor Load (0.2ms)[0m  [1m[34mSELECT "auditors".* FROM "auditors"[0m
+  Rendered samples/_form.html.erb (80.8ms)
+  Rendered samples/new.html.erb within layouts/application (84.9ms)
+  Rendered partials/_header.html.erb (70.9ms)
+  Rendered partials/_sidebar.html.erb (0.7ms)
+Completed 200 OK in 315ms (Views: 177.4ms | ActiveRecord: 6.0ms)
+
+
+  [1m[36mSample Load (5.1ms)[0m  [1m[34mSELECT  "samples".* FROM "samples" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "samples"[0m
+Started GET "/samples/new" for 127.0.0.1 at 2018-04-21 16:19:54 -0500
+Processing by SamplesController#new as HTML
+  Rendering samples/new.html.erb within layouts/application
+  [1m[36mEquipment Load (1.1ms)[0m  [1m[34mSELECT "equipment".* FROM "equipment"[0m
+  [1m[36mAuditor Load (0.4ms)[0m  [1m[34mSELECT "auditors".* FROM "auditors"[0m
+  Rendered samples/_form.html.erb (97.6ms)
+  Rendered samples/new.html.erb within layouts/application (106.9ms)
+  Rendered partials/_header.html.erb (156.5ms)
+  Rendered partials/_sidebar.html.erb (3.8ms)
+Completed 200 OK in 323ms (Views: 307.2ms | ActiveRecord: 1.4ms)
+
+

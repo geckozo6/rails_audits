@@ -4,41 +4,33 @@
       <h2><%= pluralize(sample.errors.count, "error") %> impide que la muestra sea guardada:</h2>
 
       <ul>
-      <% sample.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+		<% sample.errors.full_messages.each do |message| %>
+			<li><%= message %></li>
+		<% end %>
       </ul>
     </div>
   <% end %>
   <%= javascript_include_tag 'bootstrap-datepicker' %>
   <script type="text/javascript">
-	  jQuery( window ).load( function() {
-		  
-		  // Element Attribute Helper
-		  function attrDefault($el, data_var, default_val)
-		  {
-		    if(typeof $el.data(data_var) != 'undefined')
-		    {
-		      return $el.data(data_var);
-		    }
-
-		    return default_val;
-		  }
-		  //alert ("hello");
-	// Select2 Dropdown replacement
-	if($.isFunction($.fn.select2))
-	{
-		$(".select2").each(function(i, el)
-		{
-			var $this = $(el),
-				opts = {
+		jQuery( window ).load( function() {
+			// Element Attribute Helper
+			function attrDefault($el, data_var, default_val) {
+		    	if(typeof $el.data(data_var) != 'undefined') {
+		      		return $el.data(data_var);
+					} return default_val;
+		  		}
+			// Select2 Dropdown replacement
+			if($.isFunction($.fn.select2)) {
+				$(".select2").each(function(i, el) {
+					var $this = $(el),
+					opts = {
 					allowClear: attrDefault($this, 'allowClear', false)
 				};
 
-			$this.select2(opts);
-			$this.addClass('visible');
+				$this.select2(opts);
+				$this.addClass('visible');
 
-			//$this.select2("open");
+				//$this.select2("open");
 		});
 
 
@@ -51,19 +43,17 @@
 			});
 		}
 	}
-	$("#muestreo").select2({
-	    minimumResultsForSearch: Infinity
-	});
+		$("#muestreo").select2({
+			minimumResultsForSearch: Infinity
+		});
 
-	$("#equipment-select").select2({
-	    minimumResultsForSearch: Infinity
-	});
-	
-	$("#auditor-select").select2({
-	    minimumResultsForSearch: Infinity
-	});
-	
-	$(".datepicker").datepicker("update", new Date());	
+		$("#equipment-select").select2();
+		
+		$("#auditor-select").select2({
+			minimumResultsForSearch: Infinity
+		});
+		
+		$(".datepicker").datepicker("update", new Date());	
 	
 	
 	
@@ -118,9 +108,6 @@
 		});
 
 	});
-
-	
-	
 	
 });
   </script>
@@ -203,8 +190,6 @@
   						<div class="col-sm-offset-2 col-sm-2 actions update-button">
   							<%# form.submit "<i class='entypo-check'></i>Actualizar".html_safe, class: 'btn btn-green btn-lg btn-block btn-icon' %>
 							<%= form.submit %>
-							
-							
   						</div>
   					</div>
   				</form>

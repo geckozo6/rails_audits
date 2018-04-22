@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180409040134) do
+ActiveRecord::Schema.define(version: 20180422045356) do
 
   create_table "auditors", force: :cascade do |t|
     t.text "name"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20180409040134) do
     t.integer "sample_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "failure"
     t.index ["sample_id"], name: "index_pieces_on_sample_id"
   end
 
@@ -47,6 +48,8 @@ ActiveRecord::Schema.define(version: 20180409040134) do
     t.integer "auditor_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "origin"
+    t.string "pallet"
     t.index ["auditor_id"], name: "index_samples_on_auditor_id"
     t.index ["equipment_id"], name: "index_samples_on_equipment_id"
   end

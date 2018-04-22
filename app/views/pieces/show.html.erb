@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Serie:</strong>
+  <%= @piece.serie %>
+</p>
+
+<p>
+  <strong>Cmac:</strong>
+  <%= @piece.cmac %>
+</p>
+
+<p>
+  <strong>Emac:</strong>
+  <%= @piece.emac %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @piece.status %>
+</p>
+
+<p>
+  <strong>Failure:</strong>
+  <%= @piece.failure %>
+</p>
+
+<%= link_to 'Edit', edit_piece_path(@piece) %> |
+<%= link_to 'Back', pieces_path %>

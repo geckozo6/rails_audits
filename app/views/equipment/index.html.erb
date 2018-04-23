@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+	<div class="row">
+		<div class="col-sm-3">
+			<h1 class="page-title">Tipos de Equipos</h1>
+		</div>
+		<div class="col-sm-4">
+			<%= link_to '<i class="entypo-user-add"></i>Agregar'.html_safe, new_equipment_path, class: 'btn btn-default btn-icon' %>
+		</div>
+	</div>
+		
+		
+		<script type="text/javascript">
+			 jQuery( window ).load( function() {
+			var $table2 = jQuery( "#equipment-table" );
+
+			$table2.DataTable( {
+				dom: 'Bfrtip',
+				buttons: [
+					'copyHtml5',
+					'excelHtml5',
+					'csvHtml5',
+					'pdfHtml5'
+				]
+			} );
+			});
+		</script>
+
+
+<table class="table table-bordered table-striped datatable" id="equipment-table">
+			<thead>
+				<tr>
+					<th>Equipment type</th>
+          <th>Vendor</th>
+          <th>Service</th>
+					<th>Acciones</th>
+				</tr>
+			</thead>
+
+      <tbody>
+			    <% @equipment.each do |eq| %>
+			      <tr>
+              <td><%= eq.equipment_type %></td>
+              <td><%= eq.vendor %></td>
+              <td><%= eq.service %></td>
+   						<td>
+							
+							<%= link_to '<i class="entypo-pencil"></i>Editar'.html_safe, edit_equipment_path(eq), 
+								class: "btn btn-default btn-sm btn-icon icon-left"  %>
+							
+							<%= link_to '<i class="entypo-cancel"></i>Borrar'.html_safe, eq, 
+								class: "btn btn-danger btn-sm btn-icon icon-left", 
+								method: :delete, 
+								data: { confirm: 'Are you sure?' } %>
+																
+							<%= link_to '<i class="entypo-info"></i>Ver Muestreo'.html_safe, eq, 
+								class: "btn btn-info btn-sm btn-icon icon-left" %>
+						
+
+   						</td>
+			       </tr>
+			  <% end %>
+			  
+				<% if @equipment.size== 0%>
+					<em> No existen Muestreos</em>
+				<% end %>
+			</tbody>
+		</table>
+
+

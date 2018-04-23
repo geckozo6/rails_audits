@@ -15,7 +15,6 @@ class SamplesController < ApplicationController
   # GET /samples/new
   def new
     @sample = Sample.new
-    #@equipments = Equipments.all
   end
 
   # GET /samples/1/edit
